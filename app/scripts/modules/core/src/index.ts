@@ -45,6 +45,8 @@ export * from './history';
 export * from './image';
 export * from './instance';
 
+export * from './kubernetes';
+
 export * from './loadBalancer';
 export * from './function';
 export * from './modal';

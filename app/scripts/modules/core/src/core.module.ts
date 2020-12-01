@@ -90,6 +90,7 @@ import ANGULAR_SANITIZE from 'angular-sanitize';
 import { angularSpinner } from 'angular-spinner';
 import ANGULAR_UI_BOOTSTRAP from 'angular-ui-bootstrap';
 import UI_SELECT from 'ui-select';
+import { K8S_MODULE } from './kubernetes';
 
 // load all templates into the $templateCache
 const templates = require.context('./', true, /\.html$/);
@@ -176,6 +177,8 @@ module(CORE_MODULE, [
 
   CORE_VALIDATION_VALIDATION_MODULE,
   CORE_BANNER_CONTAINER_MODULE,
+
+  K8S_MODULE,
 ]).run(() => {
   // initialize all the stateful services
   State.initialize();
