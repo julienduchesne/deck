@@ -46,6 +46,7 @@ export interface IFeatures {
   snapshots?: boolean;
   savePipelinesStageEnabled?: boolean;
   functions?: boolean;
+  kubernetesRawResources?: boolean;
 }
 
 export interface IDockerInsightSettings {
